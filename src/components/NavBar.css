@@ -13,15 +13,18 @@ header{
     width: 100%;
     
 }
+
 img{
     height: 100px;
 }
+
 a{
     margin: 1.5rem;
     font-size: xx-large;
     text-decoration: none;
     text-decoration-color: crimson;
 }
+
 nav{
     display: flex;
     justify-content: flex-end;

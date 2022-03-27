@@ -1,8 +1,9 @@
-import React from 'react';
 import '../components/NavBar.css';
+import React from 'react';
 import logo from '../imgs/logo.png';
-/* import { RiShoppingCartLine } from 'react-icons/fa'; */
-import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
+import CardWidget from './CardWidget';
+
+
 
 const NavBar = () => {
   return (
@@ -16,8 +17,7 @@ const NavBar = () => {
                 <a href="#">Marcas</a>
             </ul>
             <div>
-                {/* <RiShoppingCartLine /> */}
-                <ShoppingCartTwoToneIcon sx={{ fontSize: 40 }} />
+                CardWidget {/* cuando lo pongo entre etiquetas me da un error y no encuento por que */}
             </div>
         </nav>
         
