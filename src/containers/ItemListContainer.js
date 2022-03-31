@@ -1,21 +1,14 @@
 import React from "react";
-import ItemCount from "../components/ItemCount";
+import { Container, Card, Row, Col } from "react-bootstrap";
+import ItemList from '../components/ItemList';
 
-const ItemListContainer = ({saludo}) => {
-    /* console.log(saludo); */
+const ItemListContainer = ({ greeting }) => {
+  
+  return (
+    <> 
+      <ItemList />     
+    </> 
+  );
+};
 
-    
-
-    const Informar = (contador) =>{
-        alert( contador )
-    }
-
-    return(
-        <>
-        <h1 style={{color: "red", backgroundColor: "blue", fontSize: 50, letterSpacing: 3}}>{saludo} </h1>
-        <ItemCount stock = {5} initial = {1} informar= {Informar} />
-        </>
-    )
-}
-
-export default ItemListContainer
+export default ItemListContainer;

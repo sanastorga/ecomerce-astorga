@@ -5,11 +5,11 @@ import ItemListContainer from "./containers/ItemListContainer";
 
 const App = () => {
   const greeting = "hola xxxx";
-
+ 
   return(
     <>
       <NavBar/>
-      <ItemListContainer saludo = {greeting} />
+      <ItemListContainer saludo = {greeting}/>
       <Footer/>
     </>
   )  

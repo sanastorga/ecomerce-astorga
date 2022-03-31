@@ -1,11 +1,22 @@
-import { grey, red } from "@mui/material/colors";
-import { border, borderRadius, height, width } from "@mui/system";
-import React,{useState} from "react"; /* importacion del hook */
+import React,{useState, useEffect} from "react"; /* importacion del hook */
 
 const ItemCount = ({stock, initial, informar}) => {
 
+    
+    const [setup, setSetup] = useState(0) 
     const [contador, setContador] = useState(initial); /* simpre dentro del componente para usar/ devuelve array*/
-    /* const [users, setUsers] = useState([]); *//* array vacio */
+
+    useEffect(() => {   /* se ejecuta siempre que se renderiza se ejecuta todo el codigo y despues el effect no importa la ubicacion */
+        console.log("ejecuta useEffect");
+        
+        setTimeout(()=>{       /* ingresa una funcion y tiempo demora en milisegundos */
+            setSetup(setup +1);
+        }, 2000);
+
+    }, [contador]);/* variables de las que depende el useeffect - no se puede modificar el mismo estado que el array de dependencia */
+    
+    
+    
 
     const incrementa = () => {
         if (contador < stock){
@@ -36,7 +47,9 @@ const ItemCount = ({stock, initial, informar}) => {
         <button style={{width:20, height:20}} onClick={incrementa}>+</button>
         </div> 
         <button style={{padding: 5, margin: 10 }}onClick={agregar}>Añadir a carrito</button>
+        <h2>{setup}</h2>
         </div>
+        
     )
 }
 
