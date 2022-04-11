@@ -6,4 +6,4 @@ const productos = [
     {id:"5", title:"producto 5", price:"$xxxx", pictureUrl:"https://th.bing.com/th/id/OIP.329BixkcxJC4iW0FoVw4egHaIS?w=184&h=206&c=7&r=0&o=5&dpr=1.25&pid=1.7"},
     {id:"6", title:"producto 6", price:"$xxxx", pictureUrl:"https://th.bing.com/th/id/OIP.NKWm_Zm5xHHxV2yWzHgvrQHaHx?w=199&h=210&c=7&r=0&o=5&dpr=1.25&pid=1.7"},
 ];
-export default productos;
+ export default productos

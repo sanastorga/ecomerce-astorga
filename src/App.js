@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import ItemListContainer from "./containers/ItemListContainer";
+/* import ItemListContainer from "./containers/ItemListContainer"; */
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 const App = () => {
   const greeting = "hola xxxx";
@@ -9,7 +10,8 @@ const App = () => {
   return(
     <>
       <NavBar/>
-      <ItemListContainer saludo = {greeting}/>
+      {/* <ItemListContainer saludo = {greeting}/> */}
+      <ItemDetailContainer/>
       <Footer/>
     </>
   )  
