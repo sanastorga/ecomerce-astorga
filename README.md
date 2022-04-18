@@ -1,3 +1,29 @@
+# Tienda de Funko Pop
+
+La pagina es un e-commerce para la venta de muñecos coleccionables de Funko Pop
+
+Cuenta con
+
+- filtro por categorías: con categorías de la base de datos se generan filtros de productos.
+- listas de productos: vista general de productos con foto y detalles.
+- vista de detalles: vista con los detalles del producto.
+
+
+## Dependencias
+
+
+Uso de React Router Dom para la navegación
+
+
+### Autor
+
+Santiago Astorga
+
+2022 - Curso de React en CoderHouse
+
+-------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
