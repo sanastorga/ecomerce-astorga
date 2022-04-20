@@ -12,7 +12,7 @@ function NavBar (){
         <img src="https://es.logodownload.org/wp-content/uploads/2019/08/funko-logo-81.png"/>
       </NavLink>      
       <button >
-        <span ><CartWidget/></span>
+        <Link  to = '/cart'><CartWidget/></Link>
       </button>
       <div >
         <div className>

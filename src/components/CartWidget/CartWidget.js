@@ -17,7 +17,7 @@ let iconStyle={
 
 function CartWidget (){
     return(<div style={styles}>
-        <ShoppingCartTwoToneIcon style={iconStyle} />
+        <ShoppingCartTwoToneIcon/>
     </div>)
 }
 export default CartWidget;
