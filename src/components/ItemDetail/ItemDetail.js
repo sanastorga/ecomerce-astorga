@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, } from 'react-router-dom'
 import '../ItemDetail/ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useState } from 'react'
@@ -25,7 +25,7 @@ const ItemDetail = ({productDetail}) => {
         title,
         price,
         pictureURL,
-        count
+        count,
       }
       count > 0 && addItem(itemToAdd)
     }
@@ -48,7 +48,7 @@ const ItemDetail = ({productDetail}) => {
                       setCount={setCount}
                       count={count}
                     />
-                  : <NavLink to='/' className="btn btn-success my-3">Terminar mi compra</NavLink>
+                  : <NavLink to='/cart' className="btn btn-success my-3">Terminar mi compra</NavLink>
                 }
                 <hr/>
                 <button  className="getBack-btn" onClick={handleNavigate} type="button">Volver</button>
