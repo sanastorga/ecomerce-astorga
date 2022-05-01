@@ -24,8 +24,8 @@ const Cart = () => {
           <div key={item.id}>
               <h4>{item.title}</h4>
               <p>Cantidad: {item.count}</p>
-              <h5>Precio unitario: {item.price}</h5>  
-              <h5>Precio total: {item.price * item.count}</h5>
+              <h5>Precio unitario: U$S {item.price}</h5>  
+              <h5>Precio total: U$S {item.price * item.count}</h5>
               <button 
                   className="btn btn-danger"
                   onClick={() => removeItem(item.id)}
@@ -37,7 +37,7 @@ const Cart = () => {
       ))
       
     }
-    <h3>TOTAL: {cartTotal()} </h3>
+    <h3>TOTAL: U$S {cartTotal()} </h3>
     <hr/>
     <button className="btn btn-danger" onClick={clearCart} disabled={cart.length === 0}>Vaciar carrito</button>
     </div>

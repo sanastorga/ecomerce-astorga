@@ -14,7 +14,7 @@ return(<li key={id} style={itemStyle}>
                 <img src={pictureURL} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <p className="card-text">{price}</p>
+                    <p className="card-text">U$S {price}</p>
                     <Link to={`/item/${id}`}><button type="button" className="btn btn-primary">VER MAS</button></Link>
                 </div>
             </div>

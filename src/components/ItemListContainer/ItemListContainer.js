@@ -1,8 +1,9 @@
 
 import React, { useEffect , useState} from "react";
 import ItemList from '../ItemList/ItemList'
-import { getProductos } from '../../FakeApi'
 import { useParams } from 'react-router-dom'
+import { db } from '../../firebase/config'
+import { collection, getDocs, query, where } from 'firebase/firestore'
 
 let catalogoStyle={
     display: 'flex',
@@ -19,18 +20,16 @@ function ItemListContainer (){
     const { categoryId } = useParams()
 
     useEffect(() => {
-      getProductos
-      
-        .then(datos => {
-        if (categoryId){
-            setProductos(datos.filter((prod)=> prod.category === categoryId))
-        } else{
-            
-            setProductos(datos)
-        }
-    })
 
+        const productosRef = collection(db, 'ItemCollection')
+        const q = categoryId ? query(productosRef, where('category', '==', categoryId)) : productosRef
 
+        getDocs(q)
+            .then(resp => {
+                const items = resp.docs.map((doc) => ({id:doc.id, ...doc.data()}))
+                //console.log(items)
+                setProductos(items)
+            })
     }, [categoryId])
     
 

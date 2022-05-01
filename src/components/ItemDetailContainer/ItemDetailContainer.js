@@ -1,17 +1,23 @@
 
 import React, {useState,useEffect} from 'react' 
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { getProductos } from '../../FakeApi'
 import { useParams } from 'react-router-dom'
+import { db } from '../../firebase/config'
+import { doc, getDoc } from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = useState([])
     const { itemId } = useParams();
 
     useEffect(() => {
-      getProductos
-        .then(datos => {setProductDetail(datos.find(prod => prod.id === itemId))})
-    }, [])
+      
+      const docRef= doc(db,'ItemCollection', itemId)
+      getDoc(docRef)
+      .then(doc => {
+        setProductDetail({id:doc.id, ...doc.data()})
+      })
+  
+    }, [itemId])
 
   return (
     <div className= 'd-flex '>

@@ -1,5 +1,5 @@
 
-const listaProductos=[
+/* const listaProductos=[
     {
         id:"1",
         title:"FUNKO POP SPIDER-MAN TRAJE HEROE",
@@ -114,4 +114,4 @@ const listaProductos=[
 export const getProductos = new Promise((resolve, reject)=>{
     
         resolve(listaProductos)
-  });
+  }); */

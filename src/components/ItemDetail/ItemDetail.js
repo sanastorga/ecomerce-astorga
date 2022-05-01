@@ -36,7 +36,7 @@ const ItemDetail = ({productDetail}) => {
           <div className='d-flex detailCard'> 
             <img src={pictureURL} style={{minWidth:300+'px'}} className="card-img-top" alt="..."/>
             <div className="d-flex flex-column infoContainer" >
-                <p className="card-text" style={{backgroundColor:'#212529', color:'white', borderRadius:5+'px'}}>{price}</p>
+                <p className="card-text" style={{backgroundColor:'#212529', color:'white', borderRadius:5+'px'}}> U$S {price}</p>
                 <p>{descripcion}</p>
                 <br/>
                 {
