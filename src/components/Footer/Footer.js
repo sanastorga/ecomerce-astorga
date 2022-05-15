@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Footer.css";
+import './Footer.css';
 import PaymentTwoToneIcon from "@mui/icons-material/PaymentTwoTone";
 import PaymentsTwoToneIcon from "@mui/icons-material/PaymentsTwoTone";
 import ContactlessTwoToneIcon from "@mui/icons-material/ContactlessTwoTone";
@@ -16,12 +16,6 @@ const Footer = () => {
           <tr>
             <td className="nosotros">
               <h3>Sobre Nosotros</h3>
-            </td>
-            <td className="categoria">
-              <h3>Categorias</h3>
-            </td>
-            <td className="informacion">
-              <h3>Informacion</h3>
             </td>
             <td className="contactos">
               <h3>Contactanos</h3>
@@ -46,24 +40,6 @@ const Footer = () => {
                 </ul>
               </tr>
             </td>
-            <td className="categorias">
-              <ul>
-                <li>Ropa</li>
-                <li>Lenceria</li>
-                <li>Zapatillas</li>
-                <li>Mochilas</li>
-              </ul>
-            </td>
-            <td className="informacion">
-              <ul>
-                <li>Sobre Nosotros</li>
-                <li>Contactanos</li>
-                <li>Terminos y Condiciones</li>
-                <li>Devoluciones y Cambios</li>
-                <li>Envios y Entrega</li>
-                <li>Politicas de Privacidad</li>
-              </ul>
-            </td>
             <td className="contactos">
               <tr>Direccion: calle x n° yz, Cordoba, Argentina.</tr>
               <tr>Telefono: 351-xxxxxxx</tr>
@@ -81,3 +57,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

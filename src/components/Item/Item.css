@@ -1,0 +1,37 @@
+.cardItem{
+    max-width: 320px;
+    max-height: 427.8px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.listItem{
+    margin: 0 1.6rem;
+    margin-bottom: 1.25rem;
+    list-style-type: none;
+}
+.imagenItem{
+  align-items: center;
+}
+.textItem{
+    text-align: center;
+    background-color: rgba(79, 79, 144, 0.87);
+    width: 80%;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 0.1rem;
+}
+.botonItem{
+    background-color: rgba(172, 83, 255, 0.83);
+    border-radius: 10px;
+}
+.containerBoton{
+    padding: 120px;
+
+}
+.bodyItem{
+    background-color: rgba(221, 220, 220, 0.852);
+    padding: 0.5rem;
+    border-radius: 10px;
+}

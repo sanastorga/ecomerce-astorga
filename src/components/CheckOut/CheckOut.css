@@ -1,0 +1,51 @@
+.containerCheckOut{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    align-content: center;
+    max-width:100%;
+    min-height:100vh;
+    margin: 0 auto;
+}
+.checkOutImputsGroup{
+        background-color: #1d0b70;
+        padding:25px;
+        border-radius: 8px;
+        margin:0 5%;
+        max-width: 600px;
+}
+
+.checkOutImputNombre{
+    width: 100%;
+    display:flex;
+}
+.imput{
+    border: none;
+    border-radius:0;
+    border-bottom: 2px solid rgb(112, 184, 243);
+    outline:none;
+    padding: 10px 5px ;
+    width: 100%;
+    margin-bottom:25px;
+}
+.btnEnviar{
+    border: none;
+    background-color:rgb(112, 184, 243);
+    outline:none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+}
+.btnVolverInicio{
+    border: none;
+    background-color:rgb(112, 123, 243);
+    outline:none;
+    border-radius: 8px;
+    width: 10%;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}

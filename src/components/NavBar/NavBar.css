@@ -1,0 +1,20 @@
+.navBar{
+    display: flex;
+    background-color: rgb(79, 79, 248);
+    align-items: center;
+    box-shadow: rgba(78, 46, 240, 0.4) 0px 5px, rgba(78, 46, 240, 0.3) 0px 10px, rgba(78, 46, 240, 0.2) 0px 15px, rgba(78, 46, 240, 0.1) 0px 20px, rgba(78, 46, 240, 0.05) 0px 25px;
+}
+.nav-link{
+    text-decoration: none;
+    color: azure;
+    border-radius: 0.2em;
+    margin: 1rem;
+    text-shadow: 5px 3px 5px #000000;
+}
+.funkoLogo{
+    max-width: 20rem;
+    margin-left: 8rem;
+}
+.funkoNavs{
+    padding-left: 28rem;
+}

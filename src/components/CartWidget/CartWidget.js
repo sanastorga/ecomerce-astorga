@@ -3,7 +3,7 @@ import React  from "react";
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import { Link } from "react-router-dom";
 import {useContext} from 'react';
-import {CartContext} from '../Context/CartContext'
+import {CartContext} from '../Context/CartContext';
 
 
 let styles={
@@ -11,11 +11,6 @@ let styles={
     justifyContent: 'center',
     color: 'black',
     margin: '5px'
-}
-let iconStyle={
-    color: 'black',
-    margin:'7px',
-    fontSize:'20px'
 }
 
 function CartWidget (){
@@ -25,7 +20,7 @@ function CartWidget (){
     return(< Link to='/cart'>
                 <div style={styles}>
                     <ShoppingCartTwoToneIcon/>
-                    <span> {cartQuantity()} </span>
+                    <span className="cartInfo"> {cartQuantity()} </span>
                 </div>
             </Link>
     )

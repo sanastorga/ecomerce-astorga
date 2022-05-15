@@ -9,7 +9,8 @@ const ulStyle = {
     alignItems: 'flex-start',
     alignContent: 'flex-start',
     marginTop: '50px',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px;',
 }
 
 function ItemList ({Items}) {

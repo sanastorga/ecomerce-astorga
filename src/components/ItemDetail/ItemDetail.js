@@ -31,12 +31,12 @@ const ItemDetail = ({productDetail}) => {
     }
   
     return (
-      <div style={{width: 18+'rem'}}>
-          <h1 className="card-title" style={{margin:40+'px'}}>{title}</h1>
+      <div className='tarjeta' style={{width: 18+'rem'}}>
+          <h1 className="card-title">{title}</h1>
           <div className='d-flex detailCard'> 
-            <img src={pictureURL} style={{minWidth:300+'px'}} className="card-img-top" alt="..."/>
+            <img src={pictureURL} className="card-img-top centraImagen" alt="..."/>
             <div className="d-flex flex-column infoContainer" >
-                <p className="card-text" style={{backgroundColor:'#212529', color:'white', borderRadius:5+'px'}}> U$S {price}</p>
+                <p className="card-text cardText"> U$S {price}</p>
                 <p>{descripcion}</p>
                 <br/>
                 {

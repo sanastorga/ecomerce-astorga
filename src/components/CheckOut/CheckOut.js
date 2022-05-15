@@ -6,6 +6,7 @@ import { db } from '../../firebase/config'
 import { collection, addDoc, Timestamp, doc, getDoc, updateDoc} from 'firebase/firestore'
 import { Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
+import './CheckOut.css'
 
 const Checkout = () => {
 
@@ -15,6 +16,7 @@ const Checkout = () => {
 
     const [values, setValues]= useState ({
       nombre:'',
+      apellido:'',
       email:'',
       tel: ''
     })
@@ -57,7 +59,6 @@ const Checkout = () => {
 
                 } else {
                   alert('No hay stock');
-                   //reemplazar por componente modal.
                 }
               })
       })
@@ -65,10 +66,10 @@ const Checkout = () => {
 
     }
     if (orderId) {
-      return (<div className="container my-5">
+      return (<div className="containerCheckOut">
              <h2>Tu orden se registró exitosamente!</h2>
              <h4> Guarda tu número de orden: {orderId}</h4>
-             <Link to="/" className="btn btn-primary">Volver al inicio</Link>
+             <Link to="/" className="btnVolverInicio">Volver al inicio</Link>
              </div>)
     }
     
@@ -77,40 +78,59 @@ const Checkout = () => {
     }
 
   return (
-    <div className='container my-5'>
+    <div className='containerCheckOut'>
         <h2>Checkout</h2>
         <hr/>
 
-        <form onSubmit={handleSubmit}>
-          <input
-              className="form-control my-2"
-              type={'text'}
-              placeholder= 'Tu nombre'
-              value={values.nombre}
-              name='nombre'
-              onChange={handleInputChange}
-              
-
-          />
-           <input
-              className="form-control my-2"
-              type={'email'}
-              placeholder= 'Tu email'
-              value={values.email}
-              name='email'
-              onChange={handleInputChange}
-          />
-          <input
-              className="form-control my-2"
-              type={'tel'}
-              placeholder= 'Tu telefono'
-              value={values.tel}
-              name='tel'
-              onChange={handleInputChange}
-          />
-         
-          <button className="btn btn-primary" type="submit">Enviar</button>
-        </form>
+        <h2>Completa los siguentes datos para terminar la compra...</h2>
+        <div className='checkOutImputsGroup'>
+          <form onSubmit={handleSubmit} >
+            <div className='checkOutImputNombre'>
+              <input
+                  className="imput"
+                  type={'text'}
+                  placeholder= 'Tu nombre'
+                  value={values.nombre}
+                  name='nombre'
+                  onChange={handleInputChange}
+              />
+              <input
+                  className="imput"
+                  type={'text'}
+                  placeholder= 'Tu Apellido'
+                  value={values.apellido}
+                  name='apellido'
+                  onChange={handleInputChange}
+              />
+            </div>
+            <input
+                className="imput"
+                type={'email'}
+                placeholder= 'Tu email'
+                value={values.email}
+                name='email'
+                onChange={handleInputChange}
+            />
+            <input
+                className="imput"
+                type={'email'}
+                placeholder= 'confirma email'
+                value={values.email}
+                name='email'
+                onChange={handleInputChange}
+            />
+            <input
+                className="imput"
+                type={'tel'}
+                placeholder= 'Tu telefono'
+                value={values.tel}
+                name='tel'
+                onChange={handleInputChange}
+            />
+          
+            <button className="btnEnviar" type="submit">Enviar</button>
+          </form>
+        </div>
     </div>
   )
 }

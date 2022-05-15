@@ -1,26 +1,25 @@
 footer{
     background-color: black;
-    color: white;    
+    color: white;
 }
 
 table{
     width: 80%;
     margin: 0 auto;
 }
-.nosotros{
-    width: 40%;
-}
 .tarjetas{
     justify-items: center;
-    margin-top: 0.5rem;
     display: flex;
+    margin-top: 0.5rem;
 }
-.categorias, .informacion, .contactos{
+.contactos{
     width: 20%;
+
 }
 ul, li{
     list-style: none;
 }
 h3{
     text-decoration: underline;
+    text-align: center;
 }
